@@ -10,12 +10,22 @@
 	</head>
 	<body>
 		<main>
-			<section>
-				<header>
-					<input type="button" value="Color" id="color" />
-					<input type="button" value="Rainbow" id="rainbow" />
-					<input type="button" value="Eraser" id="eraser" />
-					<label for="gridSize"> Size: </label>
+			<aside>
+				<input type="color" id="color" />
+				<input type="button" class="button" value="Eraser" id="eraser" />
+				<input type="button" class="button" value="Random Color" id="rainbow" />
+				<input type="button" class="button" value="Clear Board" id="reset" />
+				<input
+					type="button"
+					class="button"
+					value="Show Border"
+					id="gridLines"
+				/>
+				<input type="button" class="button" value="Darken" id="darken" />
+				<input type="button" class="button" value="Lighter" id="lighter" />
+
+				<div>
+					<label for="gridSize" id="gridLabel"></label>
 					<input
 						type="range"
 						min="10"
@@ -24,7 +34,9 @@
 						value="16"
 						id="gridSize"
 					/>
-				</header>
+				</div>
+			</aside>
+			<section>
 				<div id="board"></div>
 			</section>
 		</main>
