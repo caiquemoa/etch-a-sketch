@@ -7,7 +7,7 @@
 main {
 	min-height: 100vh;
 	min-width: 100vw;
-	background-color: rgb(156, 151, 151);
+	background-color: rgb(145, 145, 145);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -38,36 +38,26 @@ main > aside {
 	flex-wrap: wrap;
 }
 
-.gridItem {
-	transition: 200ms ease-in-out;
-	user-select: none;
+.board > div {
+	border-right: 1px solid rgb(138, 131, 131);
+	border-bottom: 1px solid rgb(180, 171, 171);
 }
 
-.board > * {
-	border: 1px solid black;
-}
-
-#color {
-	background: currentColor;
-	height: 200px;
-	width: 200px;
-	cursor: pointer;
-}
-
-#color {
+#colorInput {
 	background-color: transparent;
+	width: 200px;
 	height: 50px;
 	border: none;
 	cursor: pointer;
 }
 
-#color::-webkit-color-swatch {
+#colorInput::-webkit-color-swatch {
 	border-radius: 12px;
-	border: 3px solid white;
+	border: 3px solid #fff;
 }
 
 .button {
-	color: white;
+	color: #fff;
 	background: none;
 	font-weight: bold;
 	border: 3px solid white;
@@ -82,11 +72,8 @@ main > aside {
 }
 
 aside > div {
+	color: #fff;
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
-}
-
-#gridLabel {
-	color: white;
 }
