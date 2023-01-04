@@ -10,6 +10,7 @@ let mouseDown = false
 body.addEventListener('mouseup', () => (mouseDown = false))
 
 const colorInput = document.getElementById('colorInput')
+let color = colorInput.value
 
 colorInput.addEventListener('click', () => {
 	booleanReset()
@@ -25,7 +26,7 @@ const eraser = document.getElementById('eraser')
 
 eraser.addEventListener('click', () => {
 	booleanReset()
-	color = 'white'
+	color = '#fff'
 })
 
 const rgb = document.getElementById('rgb')
