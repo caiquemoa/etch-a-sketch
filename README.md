@@ -1,8 +1,8 @@
 ## You can see this project running live [here](https://caiquemoa.github.io/etch-a-sketch/).
 
-## Odin Etch-a-Sketch
+# Odin Etch-a-Sketch
 
-# Getting started
+## Getting started
 
 ## Installing
 
