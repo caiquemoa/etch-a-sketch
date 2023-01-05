@@ -1,6 +1,6 @@
 const board = document.getElementById('board')
-const gridSize = document.getElementById('gridSize')
-const rangeLabel = document.getElementById('rangeLabel')
+const gridSize = document.getElementById('grid-size')
+const rangeLabel = document.getElementById('range-label')
 gridSize.addEventListener('change', createGrid)
 
 const body = document.getElementsByTagName('body')[0]
@@ -9,7 +9,7 @@ let mouseDown = false
 
 body.addEventListener('mouseup', () => (mouseDown = false))
 
-const colorInput = document.getElementById('colorInput')
+const colorInput = document.getElementById('color-input')
 let color = colorInput.value
 
 colorInput.addEventListener('click', () => {
@@ -42,7 +42,7 @@ const resetGrid = document.getElementById('reset')
 
 resetGrid.addEventListener('click', createGrid)
 
-const gridLines = document.getElementById('gridLines')
+const gridLines = document.getElementById('grid-lines')
 
 gridLines.addEventListener('click', () => {
 	if (board.classList.contains('board')) return board.classList.remove('board')
